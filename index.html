@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocols Summary Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        @media (max-width: 600px) {
+            th, td {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Protocols Summary Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Protocol</th>
+                <th>Description</th>
+                <th>Use Case</th>
+                <th>Real-World Examples</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTTP/HTTPS</td>
+                <td>Web data transfer</td>
+                <td>Used for sending and receiving web pages and data securely.</td>
+                <td>
+                    <ul>
+                        <li>Online shopping websites (e.g., Amazon)</li>
+                        <li>News websites (e.g., BBC)</li>
+                        <li>Social media platforms (e.g., Facebook)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>RESTful APIs</td>
+                <td>Web service design</td>
+                <td>Communicates with web services using standard HTTP methods for data exchange.</td>
+                <td>
+                    <ul>
+                        <li>Twitter API for accessing tweets</li>
+                        <li>GitHub API for managing repositories</li>
+                        <li>Spotify API for music streaming</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>gRPC</td>
+                <td>High-performance service communication</td>
+                <td>Enables fast and efficient connection between microservices for data exchange.</td>
+                <td>
+                    <ul>
+                        <li>Google Cloud services</li>
+                        <li>Netflix for microservices communication</li>
+                        <li>Square for handling payments</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Kafka</td>
+                <td>Event streaming platform</td>
+                <td>Handles large streams of data efficiently, ideal for real-time analytics.</td>
+                <td>
+                    <ul>
+                        <li>LinkedIn for real-time data feeds</li>
+                        <li>Uber for managing ride-sharing data</li>
+                        <li>Spotify for music event processing</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>WebSockets</td>
+                <td>Real-time communication protocol</td>
+                <td>Facilitates instant data updates between the client and server for interactive applications.</td>
+                <td>
+                    <ul>
+                        <li>Online gaming (e.g., Fortnite)</li>
+                        <li>Collaboration tools (e.g., Google Docs)</li>
+                        <li>Stock trading platforms (e.g., Robinhood)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>XMPP</td>
+                <td>Messaging protocol</td>
+                <td>Supports real-time messaging and presence information in chat applications.</td>
+                <td>
+                    <ul>
+                        <li>WhatsApp for instant messaging</li>
+                        <li>Slack for team communication</li>
+                        <li>Jabber for online chat services</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>SMTP</td>
+                <td>Email sending protocol</td>
+                <td>Used for sending emails from one server to another, including batch email campaigns.</td>
+                <td>
+                    <ul>
+                        <li>Mailchimp for email marketing</li>
+                        <li>Gmail for personal email</li>
+                        <li>SendGrid for transactional email services</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>FTP/SFTP</td>
+                <td>File transfer protocol</td>
+                <td>Used for transferring files between computers over the internet securely.</td>
+                <td>
+                    <ul>
+                        <li>Website hosting (e.g., file uploads)</li>
+                        <li>File sharing services (e.g., Dropbox)</li>
+                        <li>Remote server management (e.g., cPanel)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Apache Avro</td>
+                <td>Data serialization framework</td>
+                <td>Used for data storage and transmission in a compact binary format, ideal for big data.</td>
+                <td>
+                    <ul>
+                        <li>Hadoop for data processing</li>
+                        <li>Apache Spark for large-scale data analytics</li>
+                        <li>Cloudera for data management solutions</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>AMQP</td>
+                <td>Advanced Message Queuing Protocol</td>
+                <td>Manages messaging between distributed systems, ensuring reliable delivery of messages.</td>
+                <td>
+                    <ul>
+                        <li>RabbitMQ for message queuing</li>
+                        <li>Financial applications for transaction processing</li>
+                        <li>Banking services for order management</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Thrift</td>
+                <td>Cross-language service framework</td>
+                <td>Facilitates service development in different programming languages, simplifying service calls.</td>
+                <td>
+                    <ul>
+                        <li>Facebook for internal service communication</li>
+                        <li>Uber for managing various service languages</li>
+                        <li>Netflix for service-oriented architecture</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>MQTT</td>
+                <td>Lightweight messaging protocol</td>
+                <td>Ideal for collecting data from Internet of Things (IoT) devices.</td>
+                <td>
+                    <ul>
+                        <li>Smart home devices (e.g., Nest)</li>
+                        <li>Wearable health devices (e.g., Fitbits)</li>
+                        <li>Connected vehicles for telemetry data</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Batched APIs</td>
+                <td>APIs for multiple requests</td>
+                <td>Allows sending multiple requests in a single API call to reduce latency.</td>
+                <td>
+                    <ul>
+                        <li>GitHub API for batch operations</li>
+                        <li>Facebook Graph API for retrieving multiple data points</li>
+                        <li>Stripe API for processing multiple payments</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>CoAP</td>
+                <td>Protocol for constrained devices</td>
+                <td>Designed for small, low-power devices to communicate over the Internet.</td>
+                <td>
+                    <ul>
+                        <li>Smart city infrastructure (e.g., lighting)</li>
+                        <li>Industrial sensors for monitoring</li>
+                        <li>Weather stations for environmental data collection</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>TCP</td>
+                <td>Reliable communication protocol</td>
+                <td>Ensures ordered and error-checked delivery of data between applications.</td>
+                <td>
+                    <ul>
+                        <li>File downloads via web browsers</li>
+                        <li>Secure file transfers (e.g., SCP)</li>
+                        <li>Video streaming services (e.g., Netflix)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>UDP</td>
+                <td>Fast communication protocol</td>
+                <td>Used for applications where speed is critical, even if some data is lost.</td>
+                <td>
+                    <ul>
+                        <li>Online gaming for real-time interactions</li>
+                        <li>VoIP services (e.g., Skype)</li>
+                        <li>Live sports broadcasts and events</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
